@@ -16,7 +16,14 @@ int main()
     }
 
     // create the window
-    SDL_Window *window = SDL_CreateWindow("Flower Shop", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+    SDL_Window *window = SDL_CreateWindow(
+        "Flower Shop", 
+        SDL_WINDOWPOS_UNDEFINED, 
+        SDL_WINDOWPOS_UNDEFINED, 
+        SCREEN_WIDTH, 
+        SCREEN_HEIGHT, 
+        SDL_WINDOW_SHOWN);
+
     if (window == NULL)
     {
         printf("Window could not be created: %s\n", SDL_GetError());
@@ -47,5 +54,3 @@ int main()
     SDL_DestroyWindow(window);
     SDL_Quit();
 }
-
-//this file was modified
